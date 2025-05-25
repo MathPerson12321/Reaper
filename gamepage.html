@@ -2,13 +2,31 @@
 <html>
     <head>
         <title>When Reaper</title>
-        <script type="text/javascript" src="display.js"></script>
+        <script type="module" src="firebase.js"></script>
+        <script type="module" src="display.js"></script>
     </head>
     <body>
         <h1>When Reaper</h1>
-        <div id="game" style = "display:none">
+        <div id="game" style="display:none">
             <h2 id="timer">0 seconds</h2>
-            <button onclick="reaped()">Reap now</button>
+            <div id="reapstuff">
+                <button id="reapbutton">Reap now</button>
+            </div>
+            <div id="cooldown" style="display:none">
+                <h3 id="cd"></h3>
+            </div>
+            <div id="recentreaps">
+                <p id="1"></p>
+                <p id="2"></p>
+                <p id="3"></p>
+                <p id="4"></p>
+                <p id="5"></p>
+                <p id="6"></p>
+                <p id="7"></p>
+                <p id="8"></p>
+                <p id="9"></p>
+                <p id="10"></p>
+            </div>
             <div id="lb">
                 <p>Leaderboard</p>
              </div>
